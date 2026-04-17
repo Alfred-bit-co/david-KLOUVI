@@ -1,0 +1,767 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>Koffi David KLOUVI | Étudiant en Cybersécurité & Informatique</title>
+    <meta
+      name="description"
+      content="Portfolio de Koffi David KLOUVI, étudiant en Licence 2 Informatique à l'UCAO-UUT Lomé, passionné par la cybersécurité, les réseaux et le développement web."
+    />
+    <meta
+      name="keywords"
+      content="Cybersécurité, Informatique, Linux, Réseaux, Développement Web, PHP, MySQL, UCAO-UUT, TryHackMe"
+    />
+    <meta name="author" content="Koffi David KLOUVI" />
+    <meta
+      property="og:title"
+      content="Koffi David KLOUVI | Cybersécurité & Informatique"
+    />
+    <meta
+      property="og:description"
+      content="Étudiant en informatique passionné par la cybersécurité, les systèmes et le développement web."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="preloader-spinner"></div>
+    </div>
+
+    <!-- Matrix Canvas Background -->
+    <canvas id="matrixCanvas" class="matrix-bg"></canvas>
+
+    <!-- Header -->
+    <header id="header">
+      <nav class="nav">
+        <div class="nav-brand">
+          <span class="logo">DK</span>
+          <span class="logo-text">KLOUVI</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Accueil</a></li>
+          <li><a href="#about" class="nav-link">À Propos</a></li>
+          <li><a href="#skills" class="nav-link">Compétences</a></li>
+          <li><a href="#experience" class="nav-link">Expérience</a></li>
+          <li><a href="#formation" class="nav-link">Formation</a></li>
+          <li><a href="#portfolio" class="nav-link">Projets</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-contact">
+          <a href="#contact" class="btn btn-small btn-primary">🔒 Contact</a>
+        </div>
+        <button
+          class="mobile-menu-btn"
+          id="menuToggle"
+          aria-label="Menu mobile"
+        >
+          <i data-lucide="menu"></i>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text-box">
+            <h1 class="hero-subtitle">// IDENTIFIANT :</h1>
+            <h2 class="hero-name">
+              Koffi David <span class="highlight">KLOUVI</span>
+            </h2>
+            <div class="typewriter-container">
+              <p class="job-title" id="typewriter">
+                $> Étudiant en Cybersécurité & Développement Web
+              </p>
+            </div>
+            <p class="hero-description">
+              Étudiant en informatique passionné par la cybersécurité, les
+              systèmes informatiques et le développement web. Je consacre mon
+              temps à l'apprentissage en autonomie et à la réalisation de
+              projets pratiques pour renforcer mes compétences.
+            </p>
+            <div class="hero-btns">
+              <a href="#portfolio" class="btn btn-primary">
+                <i data-lucide="target"></i> Voir mes projets
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                <i data-lucide="mail"></i> Me contacter
+              </a>
+            </div>
+          </div>
+          <div class="profile-photo-container">
+            <div class="image-container cyber-glow">
+              <img
+                src="david_KLOUVI.jpeg"
+                alt="David_KLOUVI"
+                class="profile-photo"
+              />
+            </div>
+            <div class="profile-badge">
+              <i data-lucide="shield"></i>
+              <span>Licence 2 Informatique • UCAO-UUT</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-card">
+            <h3 class="stat-number" data-count="15">0</h3>
+            <p>Labos TryHackMe</p>
+          </div>
+          <div class="stat-card">
+            <h3 class="stat-number" data-count="8">0</h3>
+            <p>Projets réalisés</p>
+          </div>
+          <div class="stat-card">
+            <h3 class="stat-number" data-count="5">0</h3>
+            <p>Technologies</p>
+          </div>
+          <div class="stat-card">
+            <h3 class="stat-number" data-count="2">0</h3>
+            <p>Années d'études</p>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator" id="scrollIndicator">
+        <i data-lucide="chevrons-down"></i>
+        <span>Explorer</span>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">// whoami</span>
+          <h2 class="section-title">
+            Étudiant passionné par la sécurité & les systèmes
+          </h2>
+          <p class="section-description">
+            Curiosité, rigueur et apprentissage continu.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-content">
+            <h3>À propos de moi</h3>
+            <p>
+              Je suis étudiant en Licence 2 Informatique à l'UCAO-UUT de Lomé,
+              passionné par la cybersécurité, les réseaux informatiques et le
+              développement web. Je consacre une partie importante de mon temps
+              à l'apprentissage en autonomie à travers des plateformes comme
+              TryHackMe ainsi qu'à la réalisation de petits projets pratiques.
+            </p>
+            <p>
+              Je m'intéresse particulièrement aux systèmes Linux et aux
+              environnements techniques, avec une volonté constante d'améliorer
+              mes compétences. Mon objectif est de devenir expert en
+              cybersécurité et de contribuer à la protection des systèmes
+              d'information.
+            </p>
+
+            <div class="about-values">
+              <div class="value-item">
+                <i data-lucide="brain"></i>
+                <h4>Curiosité technique</h4>
+                <p>Toujours en apprentissage sur TryHackMe</p>
+              </div>
+              <div class="value-item">
+                <i data-lucide="lock"></i>
+                <h4>Passion cybersécurité</h4>
+                <p>Identification de vulnérabilités web</p>
+              </div>
+              <div class="value-item">
+                <i data-lucide="zap"></i>
+                <h4>Rigueur & Analyse</h4>
+                <p>Bases en mathématiques et logique</p>
+              </div>
+            </div>
+
+            <div class="tech-stack">
+              <h4>Environnement de prédilection</h4>
+              <div class="stack-tags">
+                <span class="stack-tag">Kali Linux</span>
+                <span class="stack-tag">Ubuntu</span>
+                <span class="stack-tag">VMware</span>
+                <span class="stack-tag">TryHackMe</span>
+                <span class="stack-tag">Windows</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-container">
+            <div class="skills-card">
+              <h3 class="skills-title">⚡ Compétences Techniques</h3>
+
+              <div class="skill-category">
+                <h4><i data-lucide="terminal"></i> Systèmes & Réseaux</h4>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span>Linux (commandes, navigation terminal)</span
+                    ><span>75%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="75"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span>Réseaux (IP, DNS, DHCP)</span><span>65%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="65"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span>Virtualisation (VMware)</span><span>80%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="80"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <h4><i data-lucide="code-2"></i> Développement Web</h4>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span>HTML / CSS</span><span>70%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="70"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span>PHP / MySQL</span><span>65%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="65"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span>JavaScript (bases)</span><span>50%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="50"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <h4><i data-lucide="shield"></i> Sécurité</h4>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span>Identification vulnérabilités (SQLi, XSS)</span
+                    ><span>60%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="60"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span>Hash de mots de passe</span><span>70%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="70"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compétences / Services Section -->
+    <section id="skills" class="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">[ arsenal technique ]</span>
+          <h2 class="section-title">Domaines de compétence</h2>
+          <p class="section-description">
+            Les technologies et méthodes que je maîtrise ou explore activement.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon"><i data-lucide="server"></i></div>
+            <h3>Systèmes & Virtualisation</h3>
+            <p>
+              Installation et configuration de machines virtuelles, manipulation
+              d'environnements Linux.
+            </p>
+            <ul class="service-features">
+              <li><i data-lucide="check"></i> VMware / VirtualBox</li>
+              <li><i data-lucide="check"></i> Kali Linux / Ubuntu</li>
+              <li>
+                <i data-lucide="check"></i> Simulation d'attaques contrôlées
+              </li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon"><i data-lucide="globe"></i></div>
+            <h3>Développement Web</h3>
+            <p>
+              Création d'applications web avec authentification, CRUD et gestion
+              de bases de données.
+            </p>
+            <ul class="service-features">
+              <li><i data-lucide="check"></i> PHP / MySQL</li>
+              <li><i data-lucide="check"></i> HTML5 / CSS3</li>
+              <li>
+                <i data-lucide="check"></i> Gestion utilisateurs & sessions
+              </li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon"><i data-lucide="shield"></i></div>
+            <h3>Cybersécurité</h3>
+            <p>
+              Identification de vulnérabilités web simples et sécurisation
+              basique des applications.
+            </p>
+            <ul class="service-features">
+              <li><i data-lucide="check"></i> Injection SQL / XSS</li>
+              <li><i data-lucide="check"></i> Hash de mots de passe</li>
+              <li><i data-lucide="check"></i> Labos TryHackMe</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">[ parcours ]</span>
+          <h2 class="section-title">Expérience & Réalisations</h2>
+          <p class="section-description">
+            Mon apprentissage pratique en cybersécurité et développement.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2024 - Présent</div>
+            <div class="timeline-content">
+              <h3>Apprentissage en cybersécurité (auto-formation)</h3>
+              <p class="timeline-company">
+                TryHackMe & Laboratoires personnels
+              </p>
+              <ul>
+                <li>Réalisation de laboratoires pratiques sur TryHackMe</li>
+                <li>
+                  Identification de vulnérabilités web simples (injection SQL,
+                  XSS)
+                </li>
+                <li>
+                  Manipulation d'environnements Linux et machines vulnérables
+                </li>
+                <li>
+                  Développement des bases en sécurité des systèmes et réseaux
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">2025</div>
+            <div class="timeline-content">
+              <h3>Projet académique - Application web (PHP/MySQL)</h3>
+              <p class="timeline-company">UCAO-UUT - Lomé, Togo</p>
+              <ul>
+                <li>
+                  Conception d'une application de gestion (authentification,
+                  CRUD)
+                </li>
+                <li>
+                  Mise en place de la gestion des utilisateurs et des sessions
+                </li>
+                <li>Sécurisation basique des mots de passe (hash)</li>
+                <li>Organisation et structuration d'une base de données</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">2025</div>
+            <div class="timeline-content">
+              <h3>Laboratoire de test - Environnement virtuel</h3>
+              <p class="timeline-company">Projet personnel</p>
+              <ul>
+                <li>
+                  Installation et configuration de machines virtuelles avec
+                  VMware
+                </li>
+                <li>Déploiement d'environnements Linux (Kali, Ubuntu)</li>
+                <li>Simulation d'attaques dans un cadre contrôlé</li>
+                <li>Compréhension du fonctionnement des réseaux locaux</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formation Section -->
+    <section id="formation" class="formation">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">[ études ]</span>
+          <h2 class="section-title">Parcours académique</h2>
+          <p class="section-description">
+            Mon parcours scolaire et universitaire.
+          </p>
+        </div>
+
+        <div class="education-grid">
+          <div class="education-card">
+            <div class="education-year-badge">2024</div>
+            <h4>Baccalauréat</h4>
+            <p class="education-school">Lycée de Kpodzi - Kpalimé, Togo</p>
+            <p class="education-detail">Série : Scientifique / D</p>
+            <ul>
+              <li>Acquisition des bases en mathématiques et logique</li>
+              <li>Développement de la rigueur et de l'analyse</li>
+            </ul>
+          </div>
+
+          <div class="education-card">
+            <div class="education-year-badge">2026</div>
+            <h4>Licence 2 Informatique</h4>
+            <p class="education-school">UCAO-UUT - Lomé, Togo</p>
+            <ul>
+              <li>
+                Formation en programmation (C, PHP, HTML, CSS, JavaScript)
+              </li>
+              <li>Bases en réseaux informatiques et systèmes</li>
+              <li>Introduction à la cybersécurité</li>
+              <li>
+                Réalisation de projets académiques (application web, bases de
+                données)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio / Projets -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle"># root@projets</span>
+          <h2 class="section-title">Projets & Réalisations</h2>
+          <p class="section-description">
+            Mes travaux pratiques et projets académiques.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 220'%3E%3Crect width='400' height='220' fill='%230d111a'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%2300ff9d' font-size='24' font-family='monospace'%3E🔍 TRYHACKME%3C/text%3E%3C/svg%3E"
+                alt="Labos TryHackMe"
+              />
+              <div class="project-overlay">
+                <a href="#" class="project-link"
+                  ><i data-lucide="external-link"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">Cybersécurité</span>
+              <h3>Laboratoires TryHackMe</h3>
+              <p>
+                Réalisation de multiples laboratoires pratiques pour apprendre
+                la cybersécurité de manière interactive.
+              </p>
+              <div class="project-tech">
+                <span>TryHackMe</span><span>Linux</span><span>Nmap</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 220'%3E%3Crect width='400' height='220' fill='%230d111a'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%2300e5ff' font-size='24' font-family='monospace'%3E🌐 PHP/MySQL%3C/text%3E%3C/svg%3E"
+                alt="Application web PHP"
+              />
+              <div class="project-overlay">
+                <a href="#" class="project-link"
+                  ><i data-lucide="external-link"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">Développement Web</span>
+              <h3>Application de gestion (PHP/MySQL)</h3>
+              <p>
+                Application web avec authentification, CRUD complet, gestion des
+                sessions et hash des mots de passe.
+              </p>
+              <div class="project-tech">
+                <span>PHP</span><span>MySQL</span><span>HTML/CSS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 220'%3E%3Crect width='400' height='220' fill='%230d111a'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23b026ff' font-size='24' font-family='monospace'%3E⚡ LAB VM%3C/text%3E%3C/svg%3E"
+                alt="Laboratoire virtualisation"
+              />
+              <div class="project-overlay">
+                <a href="#" class="project-link"
+                  ><i data-lucide="external-link"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">Virtualisation</span>
+              <h3>Laboratoire de test virtuel</h3>
+              <p>
+                Configuration de machines virtuelles VMware avec Kali Linux et
+                Ubuntu pour simulations d'attaques.
+              </p>
+              <div class="project-tech">
+                <span>VMware</span><span>Kali Linux</span><span>Ubuntu</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-cta">
+          <p>🔐 Intéressé par mon profil ou une collaboration ?</p>
+          <a href="#contact" class="btn btn-primary"
+            >Discuter de mes compétences</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <div class="section-header text-left" style="text-align: left">
+              <span class="section-subtitle">[ contact ]</span>
+              <h2 class="section-title" style="margin-left: 0">
+                Restons connectés
+              </h2>
+              <p class="section-description" style="margin-left: 0">
+                N'hésitez pas à me contacter pour échanger sur l'informatique et
+                la cybersécurité.
+              </p>
+            </div>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon"><i data-lucide="mail"></i></div>
+                <div>
+                  <h4>Email</h4>
+                  <a href="mailto:davidklouvi14@icloud.com"
+                    >davidklouvi14@icloud.com</a
+                  >
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon"><i data-lucide="phone"></i></div>
+                <div>
+                  <h4>Téléphone</h4>
+                  <a href="tel:+22892188471">+228 92 18 84 71</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+                <div>
+                  <h4>Localisation</h4>
+                  <p>Lomé, Togo</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-socials">
+              <p>Plateformes d'apprentissage :</p>
+              <div class="social-links">
+                <a href="https://tryhackme.com/" target="_blank"
+                  ><i data-lucide="target"></i
+                ></a>
+                <a href="https://github.com/" target="_blank"
+                  ><i data-lucide="github"></i
+                ></a>
+                <a href="#" target="_blank"><i data-lucide="linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-container">
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="name">Nom complet</label
+                ><input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Votre nom"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label
+                ><input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="votre@email.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="subject">Sujet</label
+                ><input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  required
+                  placeholder="Demande d'information / Collaboration"
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label
+                ><textarea
+                  id="message"
+                  name="message"
+                  required
+                  rows="5"
+                  placeholder="Votre message..."
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">
+                <i data-lucide="send"></i> Envoyer le message
+              </button>
+              <div class="form-status" id="formStatus"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="logo">DK</div>
+            <div>
+              <h3>Koffi David KLOUVI</h3>
+              <p>Étudiant en Licence 2 Informatique</p>
+              <p>UCAO-UUT Lomé, Togo</p>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#hero">Accueil</a></li>
+              <li><a href="#about">À Propos</a></li>
+              <li><a href="#skills">Compétences</a></li>
+              <li><a href="#experience">Expérience</a></li>
+              <li><a href="#formation">Formation</a></li>
+              <li><a href="#portfolio">Projets</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-services">
+            <h4>Centres d'intérêt</h4>
+            <ul>
+              <li>Cybersécurité</li>
+              <li>Réseaux informatiques</li>
+              <li>Développement web</li>
+              <li>Systèmes Linux</li>
+              <li>TryHackMe</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 Koffi David KLOUVI — Étudiant en Informatique</p>
+          <p>
+            <i data-lucide="shield-check"></i> Passionné par la cybersécurité
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#hero" class="back-to-top" id="backToTop"
+      ><i data-lucide="chevron-up"></i
+    ></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      // MATRIX RAIN EFFECT
+      (function matrixBackground() {
+        const canvas = document.getElementById("matrixCanvas");
+        if (!canvas) return;
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        const ctx = canvas.getContext("2d");
+        const chars =
+          "01アイウABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+{}[];:<>?/\\|`~";
+        const fontSize = 14;
+        let columns = Math.floor(canvas.width / fontSize);
+        let drops = Array(columns).fill(1);
+
+        function draw() {
+          ctx.fillStyle = "rgba(5, 5, 15, 0.04)";
+          ctx.fillRect(0, 0, canvas.width, canvas.height);
+          ctx.fillStyle = "#0aff9d";
+          ctx.font = `bold ${fontSize}px 'Courier New', monospace`;
+          for (let i = 0; i < drops.length; i++) {
+            const text = chars[Math.floor(Math.random() * chars.length)];
+            const x = i * fontSize;
+            const y = drops[i] * fontSize;
+            ctx.fillStyle = `hsl(${145 + Math.random() * 30}, 100%, 55%)`;
+            ctx.fillText(text, x, y);
+            if (y > canvas.height && Math.random() > 0.975) drops[i] = 0;
+            drops[i]++;
+          }
+        }
+        setInterval(draw, 45);
+        window.addEventListener("resize", () => {
+          canvas.width = window.innerWidth;
+          canvas.height = window.innerHeight;
+          columns = Math.floor(canvas.width / fontSize);
+          drops = Array(columns).fill(1);
+        });
+      })();
+    </script>
+  </body>
+</html>
